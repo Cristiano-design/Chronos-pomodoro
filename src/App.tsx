@@ -10,10 +10,15 @@ import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
 import { Footer } from './components/Footer';
+import { Heading } from './components/Heading';
 
 export function App() {
+  const numero = 0;
   return (
     <>
+
+      <Heading>Numero: {numero}</Heading>
+
       <Container>
         <Logo />
       </Container>
@@ -30,7 +35,7 @@ export function App() {
         <form action='' className='form'>
           <div className='formRow'>
             <DefaultInput
-              labelText='Umdia'
+              labelText={numero.toString()}
               id='input'
               type='text'
               placeholder='Digite algo'
